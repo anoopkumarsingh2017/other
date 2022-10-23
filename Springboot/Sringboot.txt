@@ -1,0 +1,131 @@
+- CGI
+- Jsp/Servlet
+- Spring & Struts
+- Spring
+	- Dependency Injection (other e.g. Google Guice)
+	- Request/Response (web pages)
+	- MVC (Model View Controller)
+	- Add server to run e.g. Tomcat
+
+- Springboot
+	- Request/Response (data only or Web Service or API)
+	- Less code than Spring
+	- Server inbuild
+
+- JSR (Java Specification Request)
+
+- Web Service 
+	- Ways
+		- JAX-WS
+			- SOAP
+				- Only XML
+				- Protocol used is SOAP
+		- JAX-RS
+			- REST
+				- Any format (json, xml etc)
+				- Protocol used is http
+	- Concept
+	- Post and Receive data in a 'specified data format'
+	- Data Format
+		- JSON
+		- XML
+		- YAML
+	- Frameworks
+		- Springboot
+		- Jersy
+
+- Other application concerns solved using 'Build Tools'
+	- Dependencies
+	- Architecture IDE
+	- Architecture as per Server required
+	- Build (WAR or JAR)
+
+- Build Tools
+	- Ant (with IVY) with .xml file configuration
+	- Maven .xml file (pom.xml) configuration
+	- Gradle .gradle (or .yaml) file configuration
+
+*************************************************
+- Request
+	- Header
+	- Body
+- Response
+	- Header
+	- Body
+	
+- API/End points
+	- Types
+		- GET, localhost:8080/mobiles
+		- GET, localhost:8080/mobiles?name=<iphone>
+		- GET, localhost:8080/mobiles/names 
+		- GET, localhost:8080/mobiles/<iphone>/rates
+		- GET, localhost:8080/mobiles/rates?name=<iphone>
+		- GET, localhost:8080/mobiles/rates?name=<iphone>&high=<100000>&low=<50000>
+		
+		- GET, localhost:8080/m/mobiles
+		- POST, localhost:8080/mobiles
+			- body: {"name":"Galaxy","price":85000.00,"company":"Samsung"}
+		- PUT, localhost:8080/mobiles
+			- body: {"name":"Galaxy","price":95000.00,"company":"Samsung1"}
+		- PUT, localhost:8080/mobiles?name=Galaxy
+			- body: {"price":95000.00,"company":"Samsung1"}
+		- DELETE, localhost:8080/mobiles?name=Galaxy
+	
+*******************************************************
+- Interface (Abstraction or methods declaration only)
+- Abstract class
+
+// Write generic code, We avoid hardcoding (avoid using 'new' operator and always returning one object)
+DataProvider1 e = new DataProvider1();
+DataProvider2 e = new DataProvider2();
+- getRestaurants(String city, String dataProvider)
+	{
+		//.............
+		// DataProvider dp = getProvider(dataProvider);
+		// dp.getList();
+		
+		- DataProvider1
+			- list
+			- Items by Restaurant
+			- Item details
+		
+		- DataProvider2 
+			- list
+			- Items by Restaurant
+			- Item details
+	}
+
+
+Environments
+	- QA
+	- UAT
+	- PRODUCTION
+
+************************************************
+- Logging
+Dlogging.level.org.springframework=TRACE
+
+***********************************************
+- GIT
+- https://github.com/
+- Sign up
+	- anoopkumarsingh2017@gmail.com
+	- GIT$#@_qpwo1029
+	
+git config --list --show-origin
+git config --global user.name "anoopkumarsingh2017"
+git config --global user.email anoopkumarsingh2017@gmail.com
+git config --list
+
+organoopkumarsingh2017
+
+git init
+git remote add mobile_repo https://github.com/anoopkumarsingh2017/spring-boot-mobile.git
+
+git config --global user.name "aks5584707"
+git config --global user.email aks5584707@gmail.com
+git remote add mobile_repo2 https://github.com/aks5584707/spring-boot-mobile.git
+	
+git branch –delete test-branch
+***************************************************
+	

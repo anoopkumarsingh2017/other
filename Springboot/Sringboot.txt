@@ -101,11 +101,33 @@ Environments
 	- UAT
 	- PRODUCTION
 
-************************************************
+**********************************************************
 - Logging
 Dlogging.level.org.springframework=TRACE
 
-***********************************************
+**********************************************************
+- VCS (version control system)
+	- check-in (push to main branch)
+	- check-out (take clone first time from main branch (create own branch))
+	- commit
+	- pull
+	- push
+	- merge
+	- conflict
+		- resolve
+			- accept their
+			- accept mine
+			- merge
+			
+- Versioning (2022.10-v1, 2022.10-v2)
+- Branching
+	- master
+		- develop > 2022.10-v1 > 2022.10-v2 -> 2022.10-v2-hotfix-1 (merge in develop & master both)
+			- branch1
+			- branch2
+			- branch3
+
+
 - GIT
 - https://github.com/
 - Sign up
@@ -128,4 +150,26 @@ git remote add mobile_repo2 https://github.com/aks5584707/spring-boot-mobile.git
 	
 git branch –delete test-branch
 ***************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
